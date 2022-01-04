@@ -7,7 +7,7 @@ function getInputValue() {
         get = md5(inputVal),
         div = document.getElementById('textId');
 
-    div.textContent = `${(get.substr(0, 16))}Q!`;
+    div.textContent = `${(get.substr(0, 20))}T$`;
 }
 
 document.getElementById("copyBtn")
@@ -15,6 +15,5 @@ document.getElementById("copyBtn")
           let text = document.getElementById("textId").value;
           navigator.clipboard.writeText(text)
             .then(() => {
-            // Получилось!
           });
 }
