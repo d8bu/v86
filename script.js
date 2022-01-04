@@ -7,7 +7,7 @@ function getInputValue() {
         get = md5(inputVal),
         div = document.getElementById('textId');
 
-    div.textContent = `${get}Q!`;
+    div.textContent = `${(get.substr(0, 14))}Q!`;
 }
 
 document.getElementById("copyBtn")
